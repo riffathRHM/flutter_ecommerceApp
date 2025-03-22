@@ -109,16 +109,93 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
+            SizedBox(height: 20.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("All Products",style: AppWidget.semiBoldTextFieldStyle(),),
+                Text("See all",style: TextStyle(
+                  color: Color(0xFFfd6f3e),
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold
+
+                ),)
+              ],
+            ),
             SizedBox(height: 30.0),
             Container(
-              height: 90,
+              height: 240,
               child: ListView(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
+                    margin: EdgeInsets.only(right: 20.0),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
                     child: Column( children: [
-                      Image.asset("images/headphone2.png",height: 60,width: 60,fit: BoxFit.cover,),
+                      Image.asset("images/headphone2.png",height: 150,width: 150,fit: BoxFit.cover,),
+                      Text("Headphoner",style: AppWidget.semiBoldTextFieldStyle(),),
+                      SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text("\$100",style: TextStyle(color: Color(0xFFfd6f3e),fontSize: 22.0,fontWeight: FontWeight.bold),),
+                          SizedBox(width: 50.0),
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(color: Color(0xFFfd6f3e),borderRadius: BorderRadius.circular(7)),
+                            child: Icon(Icons.add,color: Colors.white,)
+                          )
+                        ],
+                      ),
+                      
+                    ],
+              
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
+                    child: Column( children: [
+                      Image.asset("images/watch2.png",height: 150,width: 150,fit: BoxFit.cover,),
+                      Text("Apple Watch",style: AppWidget.semiBoldTextFieldStyle(),),
+                      SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text("\$300",style: TextStyle(color: Color(0xFFfd6f3e),fontSize: 22.0,fontWeight: FontWeight.bold),),
+                          SizedBox(width: 50.0),
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(color: Color(0xFFfd6f3e),borderRadius: BorderRadius.circular(7)),
+                            child: Icon(Icons.add,color: Colors.white,)
+                          )
+                        ],
+                      ),
+                      
+                    ],
+              
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 20),
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
+                    child: Column( children: [
+                      Image.asset("images/laptop2.png",height: 150,width: 150,fit: BoxFit.cover,),
+                      Text("Headphoner",style: AppWidget.semiBoldTextFieldStyle(),),
+                      SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Text("\$100",style: TextStyle(color: Color(0xFFfd6f3e),fontSize: 22.0,fontWeight: FontWeight.bold),),
+                          SizedBox(width: 50.0),
+                          Container(
+                            padding: EdgeInsets.all(5),
+                            decoration: BoxDecoration(color: Color(0xFFfd6f3e),borderRadius: BorderRadius.circular(7)),
+                            child: Icon(Icons.add,color: Colors.white,)
+                          )
+                        ],
+                      ),
                       
                     ],
               
